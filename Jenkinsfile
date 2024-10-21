@@ -7,23 +7,23 @@ pipeline{
                  echo 'github url checkout'
             }
         }
-        stage('codecompile with mounisha'){
+        stage('codecompile with akshat'){
             steps{
                 echo 'starting compiling'
                 sh 'mvn compile'
             }
         }
-        stage('codetesting with mounisha'){
+        stage('codetesting with akshat'){
             steps{
                 sh 'mvn test'
             }
         }
-        stage('qa with mounisha'){
+        stage('qa with akshat'){
             steps{
                 sh 'mvn checkstyle:checkstyle'
             }
         }
-        stage('package with mounisha'){
+        stage('package with akshat'){
             steps{
                 sh 'mvn package'
             }
